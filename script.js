@@ -15,8 +15,8 @@ function getRandomIntInclusive(min, max) {
 
 
 const divan = document.querySelector("div");
-
-divan.addEventListener('touchmove',(e)=>{
+window.addEventListener('DOMContentLoaded',()=>{
+    divan.addEventListener('touchmove',(e)=>{
        
         let aud = new Audio();
         aud.src=`${getRandomIntInclusive(1, 11)}.mp3`;
@@ -27,6 +27,8 @@ divan.addEventListener('touchmove',(e)=>{
         
     });
         
+});
+
 
 /* btn.forEach(item=>{
     item.addEventListener('mouseenter',(e)=>{
